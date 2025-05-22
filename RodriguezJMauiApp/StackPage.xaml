@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             x:Class="RodriguezJMauiApp.StackPage"
+             Title="Stack Layout">
+    <VerticalStackLayout Padding="20">
+        <Label Text="Nombre: Jean" FontSize="24"/>
+        <Label Text="Apellido Paterno: Rodriguez" FontSize="18"/>
+        <Label Text="Apellido Materno: Ortiz" FontSize="14"/>
+        <Button Text="Ir a FlexLayout" Clicked="OnGoToFlexClicked"/>
+    </VerticalStackLayout>
+</ContentPage>
+
+

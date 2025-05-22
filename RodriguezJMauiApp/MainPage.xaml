@@ -4,9 +4,7 @@
              x:Class="RodriguezJMauiApp.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
+        <VerticalStackLayout Padding="30,0" Spacing="25">
             <Image
                 Source="dotnet_bot.png"
                 HeightRequest="185"
@@ -26,11 +24,16 @@
 
             <Button
                 x:Name="CounterBtn"
-                Text="Click me" 
+                Text="Click me"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+
+            <!-- Botones de navegación -->
+            <Button Text="Ir a GridPage" Clicked="OnGoToGridClicked"/>
+            <Button Text="Ir a StackPage" Clicked="OnGoToStackClicked"/>
+            <Button Text="Ir a FlexPage" Clicked="OnGoToFlexClicked"/>
+            <Button Text="Ir a AbsolutePage" Clicked="OnGoToAbsoluteClicked"/>
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
